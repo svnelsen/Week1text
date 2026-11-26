@@ -28,7 +28,7 @@
     "“No! I cannot swim. But I can munch. It is so much fun!”"
 ];
 const recordedWords = "be big black but can cat chip duck fish fun go he hen hi i is it kick me much no rock sad she shop sit so stop that the thin we wet who yes".split(" ");
-const addedWords = "a and cannot glad grabs grins has hello help in jack jumps let’s munch on sits splash spots swim thanks tom what when which with".split(" ");
+const addedWords = "a cannot glad grabs grins has hello help in jack jumps let’s munch on sits splash spots swim thanks tom what when which with".split(" ");
 const edition = {
   title: "Tom and Jack",
   translation: {
@@ -70,6 +70,7 @@ const edition = {
   wordAudio: Object.fromEntries([
     ...recordedWords.map(word => [word, "assets/audio/words/" + word + ".mp3"]),
     ...addedWords.map(word => [word, "assets/audio/words/Week1text_words/" + word.replace("’", "") + ".mp3"]),
+    ["and", "assets/audio/words/Week1text_words/and.wav"],
   ]),
   rules: {
     sh: ["SH /ʃ/", "S и H шутят.", ["fish", "shop"], "sh", "digraphs"],
