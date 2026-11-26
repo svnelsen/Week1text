@@ -42,7 +42,7 @@ function button(text, action) {
 
 function image(name, alt, lazy = true) {
   const element = node("img");
-  element.src = imageFolder + name + ".webp";
+  element.src = imageFolder + (name.endsWith(".png") ? name : name + ".webp");
   element.alt = alt;
   if (lazy) element.loading = "lazy";
   return element;
