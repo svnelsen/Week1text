@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5fd">
+  <title>Week 1 — My First Story</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="reading.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><div class="shell mast-inner"><span lang="en"><strong>Meridian School</strong> · Reading Marathon</span><span class="coin coin-small" aria-label="Синий эмкойн">M</span></div></header>
+  <main class="shell">
+    <nav class="controls language-controls" aria-label="Язык рассказа">
+      <button id="language-en" type="button" aria-pressed="true">📖 Читаю на английском</button>
+      <button id="language-ru" type="button" aria-pressed="false">🇷🇺 Смотреть перевод</button>
+    </nav>
+    <header class="intro">
+      <p class="week" lang="en">Week 1 — My First Story</p>
+      <h1 id="story-title" lang="en">Tom and Jack</h1>
+      <div class="cover" id="cover"></div>
+    </header>
+    <section id="reading-controls" class="reading-controls" aria-labelledby="read-title">
+      <h2 id="read-title">Читаю сам</h2>
+      <p>Прочитай историю самостоятельно. Если не знаешь, как прочитать слово, нажми на него. Если забыл правило чтения, воспользуйся подсказкой.</p>
+      <div class="controls">
+        <button id="rules" class="primary" aria-expanded="false" aria-controls="rule-panel">💡 Вспомнить правила</button>
+        <button id="colors" aria-pressed="true">Цветовые подсказки: ВКЛ</button>
+        <button id="lamps" aria-pressed="false">Лампочки</button>
+        <button id="report" aria-pressed="false">Отчётное чтение</button>
+      </div>
+      <section id="rule-panel" class="rule-panel" aria-label="Правила чтения" hidden></section>
+    </section>
+    <article id="story" lang="en" aria-labelledby="story-title"></article>
+    <section id="listen-section" class="card listen" aria-labelledby="listen-title">
+      <h2 id="listen-title">🎧 Выразительное чтение</h2>
+      <p>Послушай, как звучит вся история. Обрати внимание на паузы, интонацию и голоса персонажей. Затем попробуй прочитать рассказ так же выразительно.</p>
+      <div class="controls">
+        <button class="primary" id="play">Воспроизвести</button>
+        <button id="pause">Пауза</button>
+        <button id="resume">Продолжить</button>
+        <button id="restart">Начать сначала</button>
+      </div>
+      <p id="listen-note" class="listen-note"></p>
+    </section>
+    <section class="card reward" aria-labelledby="reward-title">
+      <span class="coin" aria-hidden="true">M</span>
+      <div><h2 id="reward-title">Твой синий эмкойн!</h2>
+      <p>Ты уже умеешь читать целые истории на английском! Потренируйся читать рассказ Tom and Jack самостоятельно и выразительно. Запиши видео своего чтения, чтобы получить синий эмкойн.</p></div>
+    </section>
+  </main>
+  <div id="status" role="status" class="status" hidden></div>
+</body>
+</html>
+
