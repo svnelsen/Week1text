@@ -70,7 +70,7 @@ const edition = {
   wordAudio: Object.fromEntries([
     ...recordedWords.map(word => [word, "assets/audio/words/" + word + ".mp3"]),
     ...addedWords.map(word => [word, "assets/audio/words/Week1text_words/" + word.replace("’", "") + ".mp3"]),
-    ["and", "assets/audio/words/Week1text_words/and.wav"],
+    ["and", "assets/audio/words/Week1text_words/and-final.mp3"],
   ]),
   rules: {
     sh: ["SH /ʃ/", "S и H шутят.", ["fish", "shop"], "sh", "digraphs"],
